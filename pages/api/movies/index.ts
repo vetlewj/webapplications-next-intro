@@ -1,5 +1,12 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
+export type Movie = {
+    id: number;
+    title: string;
+    year: number;
+    rating: number;
+};
+
 const movies = [
   { id: 1, title: "The Shawshank Redemption", year: 1994, rating: 9.2 },
   { id: 2, title: "The Godfather: Part II", year: 1974, rating: 9.0 },
