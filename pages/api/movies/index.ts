@@ -14,6 +14,10 @@ export default function handler(
         case "get":
             res.status(200).json({ success: true, data: movies });
             break;
+        case "post":
+            movies.push(req.body);
+            res.status(201).json({ success: true, data: movies });
+            break;
         default:
             res.status(405).end();
             break;
