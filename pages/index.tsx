@@ -1,7 +1,12 @@
-import type { NextPage } from "next";
+import type { NextPage } from 'next'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
-  return <h1>Forsiden</h1>;
-};
+  return (
+    <>
+      <Link href="/movies">Filmer</Link>
+    </>
+  )
+}
 
-export default Home;
+export default Home
